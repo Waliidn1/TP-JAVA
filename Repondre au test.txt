@@ -1,0 +1,46 @@
+Exercice 1 — Identifier le pattern (3 points)
+Pour chacune des six situations suivantes, identifiez le design pattern approprié et justifiez votre choix
+en une ou deux phrases.
+
+1. Une application doit partager une seule instance de son gestionnaire de configuration.
+Singleton :
+garantir de partager un seul instance dans lapplication .
+
+2. Un système de paiement doit intégrer une API externe dont l’interface est incompatible.
+Adapter : 
+Ajouter des Nouvelle fonctionalitées au version existante.
+
+3. Une application doit ajouter dynamiquement compression et chiffrement à un flux.
+Decorateur : 
+Changement de comportement sans changer le flus
+4. Plusieurs composants doivent être informés lorsqu’une commande change de statut.
+ Observator : 
+
+5. Une application doit créer différents types de notifications sans dépendre des classes concrètes.
+Factory : 
+
+6. Une application doit créer des familles cohérentes de composants graphiques Windows et macOS.
+Abst factory : 
+
+
+
+Exercice 2 — Questions de réflexion (2 points)
+1. Quelle différence existe-t-il entre Factory Method et Singleton ?
+
+factory permet de crié des deff instance sans dependre de leur classe abst 
+et singleton granti  une instance pour une seul classe . 
+
+2. Pourquoi privilégier Decorator plutôt que multiplier les sous-classes ?
+
+pour eviter de multiplier les sous classe .
+
+3. Quelle différence existe-t-il entre Adapter et Decorator ?
+
+adapter transforme linterface pour soit compatible avec les nouvelle fonctionaliter 
+decorateur ajoute des  nouvelle fonctionalité sans modifier linterface . 
+
+4. Quels risques présente Singleton dans une application multithread ?
+
+plusieurs threads peuvent créer simultanément plusieurs instances il faut syncroniser le singleton
+
+
